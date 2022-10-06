@@ -76,7 +76,20 @@ const chart = new Chart(ctx, {
             label: 'Country exports',
             data: [1000, 825, 600, 375],
             backgroundColor: ['rgb(255, 0, 0)', 'rgb(210,210,210)', 'rgb(210,210,210)', 'rgb(210,210,210)'],
-        }]
+        }],
+        options: {
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        }}
     }
 });
 
@@ -101,6 +114,18 @@ const chart = new Chart(ctx, {
             }]
     },
     options: {
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        },
         plugins: {
             title: {
                 display: true,
