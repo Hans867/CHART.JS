@@ -95,7 +95,7 @@ const chart = new Chart(ctx, {
 
  */
 
-
+/*
 
 const ctx = document.querySelector('#chart').getContext('2d');
 const chart = new Chart(ctx, {
@@ -135,6 +135,45 @@ const chart = new Chart(ctx, {
                 position: 'bottom'
 
         }
+        }
+    }
+});
+
+ */
+
+const ctx = document.querySelector('#chart').getContext('2d');
+const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['USA', 'CANADA', 'FRANKRIG', 'BRASILIEN', 'TYSKLAND'],
+        datasets: [{
+            label: 'USA - Biggest customer of Chinook',
+            data: [523, 304, 195, 190, 156],
+            backgroundColor: ['red', 'grey', 'grey', 'grey', 'grey']
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        },
+        plugins: {
+            title: {
+                display: true,
+                text: 'Top 5 lande med flest penge brugt på Chinook'
+            },
+            legend: {
+                position: 'bottom'
+
+            }
         }
     }
 });
