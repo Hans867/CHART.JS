@@ -141,6 +141,8 @@ const chart = new Chart(ctx, {
 
  */
 
+/*
+
 const ctx = document.querySelector('#chart').getContext('2d');
 const chart = new Chart(ctx, {
     type: 'bar',
@@ -168,7 +170,7 @@ const chart = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Top 5 lande med flest penge brugt på Chinook'
+                text: 'Top 5 countries with mose orders'
             },
             legend: {
                 position: 'bottom'
@@ -177,5 +179,7 @@ const chart = new Chart(ctx, {
         }
     }
 });
+
+ */
 
 
